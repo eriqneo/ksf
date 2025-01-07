@@ -97,7 +97,17 @@
                 <li
                   class="group transition duration-300 font-medium hover:text-yellow-300"
                 >
-                  <a href="#"
+                  <a href="./index.html"
+                    >Home
+                    <span
+                      class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                    ></span>
+                  </a>
+                </li>
+                <li
+                  class="group transition duration-300 font-medium hover:text-yellow-300"
+                >
+                  <a href="./about.html"
                     >About
                     <span
                       class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
@@ -137,7 +147,7 @@
                 <li
                   class="group transition duration-300 font-medium hover:text-yellow-300"
                 >
-                  <a href="#"
+                  <a href="./contactus.html"
                     >Contact Us
                     <span
                       class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
@@ -260,5 +270,34 @@
         </footer>
       </div>
     </div>
+    <script>
+      // JavaScript to toggle the menu
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      // JavaScript to add the member modal
+      const modal = document.getElementById("memberModal");
+      const openModalButton = document.getElementById("addMemberButton");
+      const closeModalButton = document.getElementById("closeModal");
+
+      openModalButton.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      });
+
+      closeModalButton.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+
+      // Close modal when clicking outside of it
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.classList.add("hidden");
+        }
+      });
+    </script>
   </body>
 </html>
