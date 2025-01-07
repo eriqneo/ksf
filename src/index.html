@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Homepage</title>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-red-800 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <img
+          src="./images/ksf.jpeg"
+          class="h-12 rounded-full hidden md:block"
+          alt=""
+        />
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="./index.html"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >HOME
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="./about.html"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >ABOUT
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >MESSAGES
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >COMMUNITY
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >DONATE
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="./contactus.html"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >Contact Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="flex justify-between items-center">
+        <!-- Menu -->
+        <div class="md:hidden">
+          <button
+            id="menuToggle"
+            class="text-gray-100 focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <i class="bx bx-menu bx-md"></i>
+          </button>
+          <ul
+            id="mobileMenu"
+            class="absolute hidden mt-2 px-10 py-8 bg-blue-800 text-gray-100 rounded-lg gap-6"
+          >
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >About
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Messages
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Community
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Donate
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Contact Us
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Logo -->
+        <img
+          src="./images/ksf.jpeg"
+          class="h-12 rounded-full md:hidden float-right"
+          alt=""
+        />
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-96"
+      style="background-image: url('./images/openbible.jpeg')"
+    >
+      <div
+        class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white px-4"
+      >
+        <h1 class="text-4xl md:text-6xl font-medium">
+          Live in Victory. Become all God created you to be.
+        </h1>
+        <button
+          id="addMemberButton"
+          class="mt-4 py-2 px-4 bg-gray-50 bg-opacity-30 border border-white text-red-700 hover:text-white hover:bg-blue-700 font-semibold rounded"
+        >
+          Be a Member of KSF Kitale
+        </button>
+      </div>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section class="bg-red-700 text-white py-8">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-4xl">
+          Receive life-changing hope and encouragement!
+        </h2>
+        <div
+          class="mt-4 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4"
+        >
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="py-2 px-4 rounded text-black"
+          />
+          <button class="py-2 px-4 bg-white text-red-800 font-semibold rounded">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="py-8 bg-yellow-100">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-4xl font-semibold">
+          Make This Your Best Year Yet!
+        </h2>
+        <p class="mt-4 text-gray-700">
+          With inspiring Scriptures, daily reflections, intentional goals,
+          personal writing space, and inspiration from Pst.Herman, this planner
+          will help you believe bigger and receive God’s promises.
+        </p>
+        <button
+          class="mt-4 py-2 px-4 bg-red-800 text-white font-semibold rounded"
+        >
+          Request Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="py-8 bg-red-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-4xl font-semibold text-center">
+          Divine Detours
+        </h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-4 rounded shadow">
+            <img
+              src="./images/prayer.jpeg"
+              alt="Article Image"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="mt-4 text-xl font-semibold">Power of Prayer</h3>
+            <p class="mt-2 text-gray-700">
+              Herman Walucho #001/24 - November 24, 2024
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <img
+              src="./images/standard.jpeg"
+              alt="Article Image"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="mt-4 text-xl font-semibold">Setting Your Standard</h3>
+            <p class="mt-2 text-gray-700">
+              Herman Walucho #002/24 - November 22, 2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="py-8">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-4xl font-semibold">Abounding Grace</h2>
+        <p class="mt-4 text-gray-700">
+          You haven’t experienced your best moments of grace. You haven’t made a
+          mistake that’s too big for the mercy of God. Whatever you’ve done,
+          God’s grace is greater. He wants to show you His love in a new way.
+          Sign up to receive Kingdom Seekers inspirational message in your inbox
+          every day.
+        </p>
+        <div
+          class="mt-4 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4"
+        >
+          <input
+            type="text"
+            placeholder="First Name"
+            class="py-2 px-4 rounded text-black"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="py-2 px-4 rounded text-black"
+          />
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="py-2 px-4 rounded text-black"
+          />
+          <button
+            class="py-2 px-4 bg-blue-800 text-white font-semibold rounded"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+      <div class="container mx-auto text-center px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4"
+        >
+          <a href="#" class="hover:text-gray-300">Find Past Messages</a>
+          <a href="#" class="hover:text-gray-300">Find our Church</a>
+          <a href="#" class="hover:text-gray-300">Check Out The Store</a>
+        </div>
+        <p class="mt-4">&copy; 2024 Your Organization. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--Member Modal-->
+    <div
+      id="memberModal"
+      class="fixed inset-0 bg-transparent bg-opacity-50 items-center justify-center hidden"
+    >
+      <div class="bg-blue-800 rounded-lg shadow-lg w-1/2 max-w-lg">
+        <div class="p-4 border-b flex justify-between items-center">
+          <h3 class="text-sm md:text-lg text-white font-semibold">
+            Be A Kingdom Seekers Member
+          </h3>
+          <button id="closeModal" class="text-gray-100 hover:text-yellow-600">
+            &times;
+          </button>
+        </div>
+        <div class="p-4">
+          <!-- Modal Content Goes Here -->
+          <form>
+            <div class="mb-4">
+              <label for="fullName" class="block text-gray-100 font-medium"
+                >Full Names</label
+              >
+              <input
+                id="memberName"
+                type="text"
+                class="w-full border rounded p-2"
+                placeholder="Enter your full names"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="phoneNumber" class="block text-gray-100 font-medium"
+                >Phone Number
+                <nav></nav
+              ></label>
+              <input
+                id="phoneNumber"
+                type="number"
+                class="w-full border rounded p-2"
+                placeholder="Enter Your Phone Number"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="ressidence" class="block text-gray-100 font-medium"
+                >Residence
+                <nav></nav
+              ></label>
+              <input
+                id="ressidence"
+                type="text"
+                class="w-full border rounded p-2"
+                placeholder="Where do you Live?"
+              />
+            </div>
+            <button
+              type="submit"
+              class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700"
+            >
+              Join KSF
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to toggle the menu
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      // JavaScript to add the member modal
+      const modal = document.getElementById("memberModal");
+      const openModalButton = document.getElementById("addMemberButton");
+      const closeModalButton = document.getElementById("closeModal");
+
+      openModalButton.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      });
+
+      closeModalButton.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+
+      // Close modal when clicking outside of it
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>

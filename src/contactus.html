@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body class="bg-yellow-50">
+    <!-- Header -->
+    <nav class="bg-red-800 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <img
+          src="./images/ksf.jpeg"
+          class="h-12 rounded-full hidden md:block"
+          alt=""
+        />
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="./index.html"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >HOME
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="./about.html"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >ABOUT
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >MESSAGES
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >COMMUNITY
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >DONATE
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+          <a
+            href="./contactus.html"
+            class="group transition duration-300 font-medium hover:text-blue-300"
+            >Contact Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-yellow-500"
+            ></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="flex justify-between items-center">
+        <!-- Menu -->
+        <div class="md:hidden">
+          <button
+            id="menuToggle"
+            class="text-gray-100 focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <i class="bx bx-menu bx-md"></i>
+          </button>
+          <ul
+            id="mobileMenu"
+            class="absolute hidden mt-2 px-10 py-8 bg-blue-800 text-gray-100 rounded-lg gap-6"
+          >
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >About
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Messages
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Community
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Donate
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+            <li
+              class="group transition duration-300 font-medium hover:text-yellow-300"
+            >
+              <a href="#"
+                >Contact Us
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500"
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Logo -->
+        <img
+          src="./images/ksf.jpeg"
+          class="h-12 rounded-full md:hidden float-right"
+          alt=""
+        />
+      </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="container mx-auto px-4 py-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          We'd love to hear from you! Use the form below to get in touch with
+          us, or visit us at our location.
+        </p>
+      </div>
+
+      <!-- Form and Location -->
+      <div class="mt-8 grid gap-8 md:grid-cols-2">
+        <!-- Contact Form -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Send Us a Message</h3>
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="4"
+                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Location and Map -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+          <p class="text-gray-600 mb-4">
+            Kitale Kenya<br />Norec, Ragira, Near St. Ursula<br />805-489-2037
+          </p>
+          <a href="https://maps.app.goo.gl/hecvAN7njamzvxxA7" target="_blank">
+            <button
+              class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 mb-4"
+            >
+              Get Directions
+            </button>
+          </a>
+          <div class="aspect-video bg-red-300 rounded-lg">
+            <!-- You can replace this with an embedded map -->
+            <p class="flex items-center justify-center h-full text-red-300">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1823110878245!2d35.02584957496516!3d1.0230539989670973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1782275785543923%3A0xe7d5b05deeb5e499!2sKINGDOM%20SEEKERS%20FELLOWSHIP%20(KITALE)!5e0!3m2!1sen!2ske!4v1736260468148!5m2!1sen!2ske"
+                width="650"
+                height="370"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Kingdom Seekers Fellowship Kitale</p>
+        <div class="flex justify-center gap-4 mt-2">
+          <a href="#" class="hover:underline">Facebook</a>
+          <a href="#" class="hover:underline">Twitter</a>
+          <a href="#" class="hover:underline">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // JavaScript to toggle the menu
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      // JavaScript to add the member modal
+      const modal = document.getElementById("memberModal");
+      const openModalButton = document.getElementById("addMemberButton");
+      const closeModalButton = document.getElementById("closeModal");
+
+      openModalButton.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      });
+
+      closeModalButton.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+
+      // Close modal when clicking outside of it
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
