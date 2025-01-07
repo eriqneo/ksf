@@ -685,6 +685,10 @@ video {
   width: 100%;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .max-w-0 {
   max-width: 0px;
 }
@@ -695,6 +699,10 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .grid-cols-1 {
@@ -1143,6 +1151,10 @@ video {
     width: 66.666667%;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1165,6 +1177,10 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:text-4xl {
